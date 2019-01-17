@@ -1,0 +1,58 @@
+:root {
+  --main-color: rgb(239, 89, 41);
+  --sec-color: rgb(239, 54, 41);
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background-image: url('header.jpg');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-size: 2em; /* or 4vw ? */
+  margin: 0;
+  margin-bottom: 150px;
+}
+
+hr {
+  border-top: 2px solid var(--main-color);
+  width: 40px;
+}
+
+#find-out-button {
+  background-color: var(--main-color);
+  border: 7px solid var(--main-color);
+  border-radius: 25px;
+  padding: 1px 20px;
+  color: white;
+  text-transform: uppercase;
+  font-size:0.8em;
+  /* font-weight: bold; */
+}
+
+#find-out-button:hover {
+  background-color: var(--sec-color);
+  border-color: var(--sec-color);
+  cursor: pointer;
+}
