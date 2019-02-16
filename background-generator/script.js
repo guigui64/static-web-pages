@@ -22,11 +22,7 @@ function randomizeColors() {
 }
 
 function randomLayer() {
-	var st = Math.floor(Math.random() * 255).toString(16);
-	if (st.length === 1) {
-		st = "0" + st;
-	}
-	return st;
+	return Math.floor(Math.random() * 255).toString(16).padStart(2, '0');
 }
 
 color1.addEventListener("input", setGradient);
